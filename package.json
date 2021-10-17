@@ -1,0 +1,23 @@
+{
+  "name": "sensor_dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard for sensor data visualization",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "Atick Faisal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
